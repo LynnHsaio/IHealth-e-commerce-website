@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import SharedLayout from "./pages/SharedLayout";
+import ProductsPage from "./pages/ProductsPage";
+import SingleProductPage from "./pages/SingleProductPage";
+import CartPage from "./pages/CartPage";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import CheckoutSuccess from "./pages/CheckoutSuccess";
+import "@stripe/stripe-js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="cart" element={<CartPage />} />
+            <Route path="products">
+              <Route index element={<ProductsPage />} />
+              <Route path=":productId" element={<SingleProductPage />} />
+            </Route>
+            <Route path="register" element={<Register />} />
+            <Route path="login" element={<Login />} />
+            <Route path="checkout-success" element={<CheckoutSuccess />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

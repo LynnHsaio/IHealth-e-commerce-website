@@ -1,13 +1,166 @@
+:root {
+  --clr-primary: #a2bad1;
+  --clr-primary-dark: #0369a1;
+
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-dark-gray: #5c5d61;
+  --clr-middle-gray: #898d99;
+  --clr-gray: #d8d8d8;
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+
+  --clr-font-title: #0c4a6e;
+  --clr-font-subtitle: #9ca3af;
+  --clr-font: #677e87;
+  --clr-font-red: #d85e5e;
+
+  --max-width: 117rem;
+  --box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+  --box-shadow--hover: 0 0px 3px 3px rgba(0, 0, 0, 0.1);
+  --spacing: 0.1rem;
+  --radius: 0.5rem;
+  --transition: all 0.3s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: solid 1px black; */
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  /* 1140 */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 5.2rem 0;
+}
+
+.page-full-height {
+  min-height: calc(100vh - 20rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.8rem 2.4rem;
+  font-size: 1.8rem;
+  border-radius: var(--radius);
+  border: none;
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-white);
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-delete {
+  background-color: rgb(212, 3, 3);
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/* form */
+.Form form {
+  width: 40rem;
+  margin: auto;
+  padding: 3.2rem 1.6rem;
+  border-radius: var(--radius);
+  border: solid 1px var(--clr-primary-dark);
+}
+
+.Form form h2 {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.Form-group {
+  margin-bottom: 2rem;
+}
+
+.Form-group label {
+  font-size: 1.8rem;
+
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.Form-group input {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  border-radius: var(--radius);
+
+  border: solid 1px gray;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.Form button {
+  width: 100%;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.Form-link {
+  text-align: center;
+}
+
+/* helper class */
+.margin-bottom-md {
+  margin-bottom: 3.2rem;
+}
+
+/* rwd */
+@media (max-width: 44em) {
+  html {
+    font-size: 53%;
+  }
+  .container {
+    padding: 0 2.4rem;
+  }
+
+  .section {
+    padding: 3.2rem 0;
+  }
 }
