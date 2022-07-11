@@ -31,11 +31,11 @@ email: test@test.com
     </tr>
     <tr>
       <th>context</th>
-      <td>提供我們方法可以將資料傳到直接傳送到需要的元件，不用經過中間層層傳遞</td>
+      <td>可以將資料傳到直接傳送到需要的元件，不用經過中間層層傳遞</td>
     </tr>
     <tr>
       <th>reducer</th>
-      <td>可以使程式碼更整齊，把所有功能結合成一個函式，使邏輯集中化</td>
+      <td>使程式碼更整齊，把所有功能結合成一個函式，邏輯集中化</td>
     </tr>
     <tr>
       <th>localstorage</th>
