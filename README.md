@@ -1,7 +1,9 @@
 # IHealth | Supplement Ecommerce
 
 <img src="./src/assets/readmeImgs/main.gif">
+
 IHealth 是一個販賣保健食品的購物網站，使用 react 框架，發佈在 firebase 上
+
 demo網址: https://e-commerce-fea9f.web.app/
 
 ```
@@ -11,8 +13,9 @@ email: test@test.com
 
 信用卡測試號碼 : 4242 4242 4242 4242
 ```
+<br/>
 
-##使用技術
+## 使用技術
 
 <table>
   <thead>
@@ -57,16 +60,18 @@ email: test@test.com
   </tbody>
 </table>
 
-##網頁功能
+<br/>
 
-###商品搜尋、分類、篩選功能
+## 網頁功能
+
+### 商品搜尋、分類、篩選功能
 <img src="./src/assets/readmeImgs/filters.gif">
 
-###購物車
+### 購物車
 <img src="./src/assets/readmeImgs/cart.gif">
 
-###會員
+### 會員
 <img src="./src/assets/readmeImgs/authentication.gif">
 
-###金流
+### 金流
 <img src="./src/assets/readmeImgs/stripe.gif">
