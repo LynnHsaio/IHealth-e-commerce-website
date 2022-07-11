@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { useCartContext } from "../contexts/CartContext";
 
 function CheckoutSuccess() {
   const navigate = useNavigate();
+  const { clearCart } = useCartContext();
 
   useEffect(() => {
+    clearCart();
+    console.log("hello");
+
     setTimeout(() => {
       navigate("/products");
     }, 2000);

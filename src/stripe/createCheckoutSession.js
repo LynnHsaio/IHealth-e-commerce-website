@@ -1,8 +1,8 @@
 import { db } from "../firebase-config";
-import { collection, doc, addDoc, onSnapshot } from "firebase/firestore";
+import { collection, addDoc, onSnapshot } from "firebase/firestore";
 import initializeStripe from "./initializeStripe";
 
-async function createCheckoutSession(uid, cart) {
+async function createCheckoutSession(uid, cart, clearCart) {
   const collectionRef = collection(db, `users/${uid}/checkout_sessions`);
 
   // Create a new checkout session in the subollection inside this users document
@@ -24,7 +24,12 @@ async function createCheckoutSession(uid, cart) {
       // We have a session, let's redirect to Checkout
       // Init Stripe
       const stripe = await initializeStripe();
-      stripe.redirectToCheckout({ sessionId });
+      const result = await stripe.redirectToCheckout({ sessionId });
+      // result.then((test) => {
+      //   clearCart();
+      // });
+      // await clearCart();
+      console.log(result);
     }
   });
 }

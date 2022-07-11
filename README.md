@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# IHealth | Supplement Ecommerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./src/assets/readmeImgs/main.gif">
+IHealth 是一個販賣保健食品的購物網站，使用 react 框架，發佈在 firebase 上
+demo網址: https://e-commerce-fea9f.web.app/
 
-## Available Scripts
+```
+測試會員帳號
+email: test@test.com
+密碼：123456
 
-In the project directory, you can run:
+信用卡測試號碼 : 4242 4242 4242 4242
+```
 
-### `npm start`
+##使用技術
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<table>
+  <thead>
+    <tr>
+      <th>技術</th>
+      <th>功能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>hooks</th>
+      <td>使程式碼更簡短、易於理解和在組件間更有重複使用性</td>
+    </tr>
+    <tr>
+      <th>context</th>
+      <td>提供我們方法可以將資料傳到直接傳送到需要的元件，不用經過中間層層傳遞</td>
+    </tr>
+    <tr>
+      <th>reducer</th>
+      <td>可以使程式碼更整齊，把所有功能結合成一個函式，使邏輯集中化</td>
+    </tr>
+    <tr>
+      <th>localstorage</th>
+      <td>將網頁中的資料儲存在使用者的瀏覽器當中，購物車紀錄得以被永久保存</td>
+    </tr>
+    <tr>
+      <th>react router dom</th>
+      <td> 實做單頁面應用程式(SPA)，讓使用者始終在同一個頁面，根據輸入的網址來呈現不同的網頁內容。網站不會重整，因此內容的切換更快速、更順暢，帶來更好的使用者體驗</td>
+    </tr>
+    <tr>
+      <th>firebase</th>
+      <td>使用 firebase deploy, firestore, authentication, stripe 金流 extention</td>
+    </tr>
+    <tr>
+      <th>RWD</th>
+      <td>能因應不同裝置螢幕大小而自動調整網頁圖文內容和排版，給使用者最佳瀏覽畫面</td>
+    </tr>
+    <tr>
+      <th>styled component</th>
+      <td>CSS-In-JS 的函式庫，使你可以在 JSX 中撰寫 CSS code</td>
+    </tr>
+  </tbody>
+</table>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##網頁功能
 
-### `npm test`
+###商品搜尋、分類、篩選功能
+<img src="./src/assets/readmeImgs/filters.gif">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###購物車
+<img src="./src/assets/readmeImgs/cart.gif">
 
-### `npm run build`
+###會員
+<img src="./src/assets/readmeImgs/authentication.gif">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###金流
+<img src="./src/assets/readmeImgs/stripe.gif">
