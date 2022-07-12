@@ -84,20 +84,28 @@ const getUniqueVals = (array, property) => {
 
 <img src="./src/assets/readmeImgs/filters.gif">
 
+<br>
+
 ### 購物車
 
 可以在購物車裡調整商品數量，數量調整範圍在 1 至庫存數量之間，也可以刪除整項商品，或是清空整個購物車。
 <img src="./src/assets/readmeImgs/cart.gif">
+
+<br>
 
 ### 會員
 
 使用 firebase Authentication 做出會員系統，有註冊和登入功能，登入後會在右上角顯示使用者名稱，及擁有購買功能。
 <img src="./src/assets/readmeImgs/authentication.gif">
 
+<br>
+
 ### 金流
 
 使用 firebase stripe extension，左側顯示購買的商品清單，右側可輸入購買人資料。
 <img src="./src/assets/readmeImgs/stripe.gif">
+
+<br>
 
 ### RWD 響應式網頁
 
